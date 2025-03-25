@@ -19,6 +19,12 @@ void setup() {
 
   if (sensor.testConnection()) Serial.println("Sensor iniciado correctamente");
   else Serial.println("Error al iniciar el sensor");
+  sensor.setXAccelOffset(-1263);
+  sensor.setYAccelOffset(480);
+  sensor.setZAccelOffset(671);
+  sensor.setXGyroOffset(61);
+  sensor.setYGyroOffset(53);
+  sensor.setZGyroOffset(-3);
 }
 
 void loop() {
